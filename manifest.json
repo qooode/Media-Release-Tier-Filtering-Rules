@@ -6,7 +6,7 @@
         "type": "filter",
         "isEnabled": true,
         "tagStyle": "filled",
-        "tagColor": "#008080"
+        "tagColor": "#00FFFF"
     },
     {
         "id": "resolution_02",
@@ -15,7 +15,7 @@
         "type": "filter",
         "isEnabled": true,
         "tagStyle": "filled",
-        "tagColor": "#008080"
+        "tagColor": "#00FFFF"
     },
     {
         "id": "resolution_03",
@@ -24,7 +24,7 @@
         "type": "filter",
         "isEnabled": true,
         "tagStyle": "filled",
-        "tagColor": "#008080"
+        "tagColor": "#00FFFF"
     },
     {
         "id": "remux_01",
@@ -51,7 +51,7 @@
         "type": "filter",
         "isEnabled": true,
         "tagStyle": "filled",
-        "tagColor": "#0000FF"
+        "tagColor": "#00FF00"
     },
     {
         "id": "hd_br",
@@ -69,7 +69,7 @@
         "type": "filter",
         "isEnabled": true,
         "tagStyle": "filled",
-        "tagColor": "#800080",
+        "tagColor": "#FF00FF",
         "imageURL": "https://raw.githubusercontent.com/jmxd/Kometa/main/overlays/images/media_info/codec/Atmos.png"
     },
     {
@@ -79,7 +79,7 @@
         "type": "filter",
         "isEnabled": true,
         "tagStyle": "filled",
-        "tagColor": "#0000FF"
+        "tagColor": "#00FF00"
     },
     {
         "id": "web_03",
@@ -88,7 +88,7 @@
         "type": "filter",
         "isEnabled": true,
         "tagStyle": "filled",
-        "tagColor": "#0000FF"
+        "tagColor": "#00FF00"
     },
     {
         "id": "web_scene",
@@ -97,7 +97,7 @@
         "type": "filter",
         "isEnabled": true,
         "tagStyle": "filled",
-        "tagColor": "#0000FF"
+        "tagColor": "#00FF00"
     },
     {
         "id": "dolby_vision",
@@ -106,7 +106,7 @@
         "type": "filter",
         "isEnabled": true,
         "tagStyle": "filled",
-        "tagColor": "#FFA500",
+        "tagColor": "#FFFF00",
         "imageURL": "https://raw.githubusercontent.com/jmxd/Kometa/main/overlays/images/media_info/codec/DV.png"
     },
     {
@@ -116,7 +116,7 @@
         "type": "filter",
         "isEnabled": true,
         "tagStyle": "filled",
-        "tagColor": "#0000FF"
+        "tagColor": "#00FF00"
     },
     {
         "id": "bluray_01",
@@ -125,7 +125,7 @@
         "type": "filter",
         "isEnabled": true,
         "tagStyle": "filled",
-        "tagColor": "#0000FF"
+        "tagColor": "#00FF00"
     },
     {
         "id": "truehd",
@@ -134,7 +134,7 @@
         "type": "filter",
         "isEnabled": true,
         "tagStyle": "filled",
-        "tagColor": "#800080",
+        "tagColor": "#FF00FF",
         "imageURL": "https://raw.githubusercontent.com/jmxd/Kometa/main/overlays/images/media_info/codec/TrueHD.png"
     },
     {
@@ -144,7 +144,7 @@
         "type": "filter",
         "isEnabled": true,
         "tagStyle": "filled",
-        "tagColor": "#0000FF"
+        "tagColor": "#00FF00"
     },
     {
         "id": "web_01",
@@ -153,7 +153,7 @@
         "type": "filter",
         "isEnabled": true,
         "tagStyle": "filled",
-        "tagColor": "#0000FF"
+        "tagColor": "#00FF00"
     },
     {
         "id": "remux_01_specific",
@@ -162,7 +162,7 @@
         "type": "filter",
         "isEnabled": true,
         "tagStyle": "filled",
-        "tagColor": "#0000FF"
+        "tagColor": "#00FF00"
     },
     {
         "id": "web_02",
@@ -171,7 +171,7 @@
         "type": "filter",
         "isEnabled": true,
         "tagStyle": "filled",
-        "tagColor": "#0000FF"
+        "tagColor": "#00FF00"
     },
     {
         "id": "hdr",
@@ -180,7 +180,7 @@
         "type": "filter",
         "isEnabled": true,
         "tagStyle": "filled",
-        "tagColor": "#FFA500",
+        "tagColor": "#FFFF00",
         "imageURL": "https://raw.githubusercontent.com/jmxd/Kometa/main/overlays/images/media_info/codec/HDR.png"
     },
     {
