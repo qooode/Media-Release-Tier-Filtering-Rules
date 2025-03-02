@@ -23,6 +23,12 @@
       "name": "Audio",
       "color": "#45B7D1",
       "isExpanded": true
+    },
+    {
+      "id": "9f8e7d6c-3b2a-4f1e-9c8d-5a6b7e4f3d2c",
+      "name": "Audio Channels",
+      "color": "#FFD700",
+      "isExpanded": true
     }
   ],
   "filters": [
@@ -209,6 +215,39 @@
       "textColor": "#FFFFFF",
       "imageURL": "https://raw.githubusercontent.com/jorgitoxp/MediaTags/main/overlays/images/media_info/codec/DTS-X.png",
       "groupId": "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f"
+    },
+    {
+      "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+      "name": "5.1 CH",
+      "pattern": "(?i)(?=.*[^0-9]5[ .][0-1]\\b)(?!.*[^0-9]6[ .][0-1]\\b)(?!.*[^0-9][7-8][ .][0-1]\\b)(?!.*(?<!repac)[^0-9][1-4][ .][0-1]\\b|\\b(Stereo|Mono)\\b)",
+      "type": "filter",
+      "isEnabled": true,
+      "tagStyle": "filled",
+      "tagColor": "#000000",
+      "textColor": "#FFFFFF",
+      "groupId": "9f8e7d6c-3b2a-4f1e-9c8d-5a6b7e4f3d2c"
+    },
+    {
+      "id": "2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e",
+      "name": "6.1 CH",
+      "pattern": "(?i)(?=.*[^0-9]6[ .][0-1]\\b)(?!.*[^0-9][7-8][ .][0-1]\\b)(?!.*[^0-9]5[ .][0-1]\\b)(?!.*(?<!repac)[^0-9][1-4][ .][0-1]\\b|\\b(Stereo|Mono)\\b)",
+      "type": "filter",
+      "isEnabled": true,
+      "tagStyle": "filled",
+      "tagColor": "#000000",
+      "textColor": "#FFFFFF",
+      "groupId": "9f8e7d6c-3b2a-4f1e-9c8d-5a6b7e4f3d2c"
+    },
+    {
+      "id": "3c4d5e6f-7a8b-9c0d-1e2f-3a4b5c6d7e8f",
+      "name": "7.1 CH",
+      "pattern": "(?i)(?=.*[^0-9][7-8][ .][0-1]\\b)(?!.*[^0-9]5[ .][0-1]\\b)(?!.*[^0-9]6[ .][0-1]\\b)(?!.*(?<!repac)[^0-9][1-4][ .][0-1]|\\b(Stereo|Mono)\\b)",
+      "type": "filter",
+      "isEnabled": true,
+      "tagStyle": "filled",
+      "tagColor": "#000000",
+      "textColor": "#FFFFFF",
+      "groupId": "9f8e7d6c-3b2a-4f1e-9c8d-5a6b7e4f3d2c"
     }
   ]
 }
