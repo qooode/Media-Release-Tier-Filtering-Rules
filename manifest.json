@@ -1,266 +1,215 @@
 {
-    "groups": [
-        {
-            "id": "550e8400-e29b-41d4-a716-446655440000",
-            "name": "Resolution",
-            "isExpanded": true
-        },
-        {
-            "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
-            "name": "Dynamic Range",
-            "isExpanded": false
-        },
-        {
-            "id": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
-            "name": "Media Source",
-            "isExpanded": false
-        },
-        {
-            "id": "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
-            "name": "Audio",
-            "isExpanded": false
-        }
-    ],
-    "filters": [
-        {
-            "id": "9f1a2b3c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
-            "name": "4K",
-            "pattern": "2160p|4k|uhd|ultra.?hd|3840\\s?x\\s?\\d{4}",
-            "type": "ContentFilter",
-            "groupId": "550e8400-e29b-41d4-a716-446655440000",
-            "enabled": true,
-            "style": "filled and bordered",
-            "tagColor": "#000000",
-            "textColor": "#ffffff",
-            "imageUrl": "https://raw.githubusercontent.com/jmxd/Kometa/refs/heads/main/overlays/images/media_info/resolution/Ultra-HD.png"
-        },
-        {
-            "id": "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
-            "name": "1080p",
-            "pattern": "1080p|full.?hd|fhd|hd1080|1920\\s?x\\s?\\d{3,4}",
-            "type": "ContentFilter",
-            "groupId": "550e8400-e29b-41d4-a716-446655440000",
-            "enabled": true,
-            "style": "filled and bordered",
-            "tagColor": "#000000",
-            "textColor": "#ffffff",
-            "imageUrl": ""
-        },
-        {
-            "id": "b2c3d4e5-f6a7-8b9c-0d1e-2f3a4b5c6d7e",
-            "name": "720p",
-            "pattern": "720p|hd720|1280\\s?x\\s?\\d{3,4}",
-            "type": "ContentFilter",
-            "groupId": "550e8400-e29b-41d4-a716-446655440000",
-            "enabled": true,
-            "style": "filled and bordered",
-            "tagColor": "#000000",
-            "textColor": "#000000",
-            "imageUrl": "https://raw.githubusercontent.com/jmxd/Kometa/refs/heads/main/overlays/images/media_info/resolution/1080P.png"
-        },
-        {
-            "id": "c3d4e5f6-a7b8-9c0d-1e2f-3a4b5c6d7e8f",
-            "name": "HDR",
-            "pattern": "hdr(?!10|10\\+|plus)",
-            "type": "ContentFilter",
-            "groupId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
-            "enabled": true,
-            "style": "filled and bordered",
-            "tagColor": "#000000",
-            "textColor": "#000000",
-            "imageUrl": "https://raw.githubusercontent.com/jmxd/Kometa/refs/heads/main/overlays/images/media_info/codec/HDR.png"
-        },
-        {
-            "id": "d4e5f6a7-b8c9-0d1e-2f3a-4b5c6d7e8f9a",
-            "name": "HDR10",
-            "pattern": "hdr10(?!\\+|plus)",
-            "type": "ContentFilter",
-            "groupId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
-            "enabled": true,
-            "style": "filled and bordered",
-            "tagColor": "#000000",
-            "textColor": "#000000",
-            "imageUrl": ""
-        },
-        {
-            "id": "e5f6a7b8-c9d0-1e2f-3a4b-5c6d7e8f9a0b",
-            "name": "HDR10+",
-            "pattern": "hdr10[ .\\-_]?(plus|\\+)",
-            "type": "ContentFilter",
-            "groupId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
-            "enabled": true,
-            "style": "filled and bordered",
-            "tagColor": "#000000",
-            "textColor": "#000000",
-            "imageUrl": "https://raw.githubusercontent.com/jmxd/Kometa/refs/heads/main/overlays/images/media_info/codec/Plus.png"
-        },
-        {
-            "id": "f6a7b8c9-d0e1-2f3a-4b5c-6d7e8f9a0b1c",
-            "name": "Dolby Vision",
-            "pattern": "dv|dovi|dolby[ .]?v(ision)?",
-            "type": "ContentFilter",
-            "groupId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
-            "enabled": true,
-            "style": "filled and bordered",
-            "tagColor": "#000000",
-            "textColor": "#ffffff",
-            "imageUrl": "https://raw.githubusercontent.com/jmxd/Kometa/refs/heads/main/overlays/images/media_info/codec/DV.png"
-        },
-        {
-            "id": "a7b8c9d0-e1f2-3a4b-5c6d-7e8f9a0b1c2d",
-            "name": "SDR",
-            "pattern": "sdr",
-            "type": "ContentFilter",
-            "groupId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
-            "enabled": true,
-            "style": "filled and bordered",
-            "tagColor": "#000000",
-            "textColor": "#ffffff",
-            "imageUrl": ""
-        },
-        {
-            "id": "b8c9d0e1-f2a3-4b5c-6d7e-8f9a0b1c2d3e",
-            "name": "HDR (Undefined)",
-            "pattern": "(?=.*\\b(2160p)\\b)(?=.*\\b(FraMeSToR|HQMUX|SiCFoI)\\b)(?!.*\\b(DV|DoVi|Dolby[ .]?V(ision)?|HDR10(?!\\+|Plus)|HDR10\\+|HDR10Plus|HLG|PQ|SDR(?!\\d))\\b)",
-            "type": "ContentFilter",
-            "groupId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
-            "enabled": true,
-            "style": "filled and bordered",
-            "tagColor": "#000000",
-            "textColor": "#000000",
-            "imageUrl": "https://raw.githubusercontent.com/jmxd/Kometa/refs/heads/main/overlays/images/media_info/codec/HDR.png"
-        },
-        {
-            "id": "c9d0e1f2-a3b4-5c6d-7e8f-9a0b1c2d3e4f",
-            "name": "REMUX",
-            "pattern": "remux",
-            "type": "ContentFilter",
-            "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
-            "enabled": true,
-            "style": "filled and bordered",
-            "tagColor": "#000000",
-            "textColor": "#ffffff",
-            "imageUrl": ""
-        },
-        {
-            "id": "d0e1f2a3-b4c5-6d7e-8f9a-0b1c2d3e4f5a",
-            "name": "Blu-ray",
-            "pattern": "blu[-_]?ray",
-            "type": "ContentFilter",
-            "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
-            "enabled": true,
-            "style": "filled and bordered",
-            "tagColor": "#000000",
-            "textColor": "#ffffff",
-            "imageUrl": ""
-        },
-        {
-            "id": "e1f2a3b4-c5d6-7e8f-9a0b-1c2d3e4f5a6b",
-            "name": "WEB",
-            "pattern": "web[-_.]?(dl|rip)",
-            "type": "ContentFilter",
-            "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
-            "enabled": true,
-            "style": "filled and bordered",
-            "tagColor": "#000000",
-            "textColor": "#ffffff",
-            "imageUrl": ""
-        },
-        {
-            "id": "f2a3b4c5-d6e7-8f9a-0b1c-2d3e4f5a6b7c",
-            "name": "Remaster",
-            "pattern": "remaster",
-            "type": "ContentFilter",
-            "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
-            "enabled": true,
-            "style": "filled and bordered",
-            "tagColor": "#000000",
-            "textColor": "#ffffff",
-            "imageUrl": ""
-        },
-        {
-            "id": "a3b4c5d6-e7f8-9a0b-1c2d-3e4f5a6b7c8d",
-            "name": "Dolby Atmos",
-            "pattern": "atmos",
-            "type": "ContentFilter",
-            "groupId": "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
-            "enabled": true,
-            "style": "filled and bordered",
-            "tagColor": "#000000",
-            "textColor": "#ffffff",
-            "imageUrl": "https://raw.githubusercontent.com/jmxd/Kometa/refs/heads/main/overlays/images/media_info/codec/Atmos.png"
-        },
-        {
-            "id": "b4c5d6e7-f8a9-0b1c-2d3e-4f5a6b7c8d9e",
-            "name": "DTS-HD MA",
-            "pattern": "dts[-_. ]?(ma|hd([-_. ]?ma)?|xll)",
-            "type": "ContentFilter",
-            "groupId": "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
-            "enabled": true,
-            "style": "filled and bordered",
-            "tagColor": "#000000",
-            "textColor": "#ffffff",
-            "imageUrl": ""
-        },
-        {
-            "id": "c5d6e7f8-a9b0-1c2d-3e4f-5a6b7c8d9e0f",
-            "name": "DTS-HD",
-            "pattern": "dts[ .\\-_]?hd(?!ma)",
-            "type": "ContentFilter",
-            "groupId": "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
-            "enabled": true,
-            "style": "filled and bordered",
-            "tagColor": "#000000",
-            "textColor": "#ffffff",
-            "imageUrl": "https://raw.githubusercontent.com/jmxd/Kometa/refs/heads/main/overlays/images/media_info/codec/DTS-HD.png"
-        },
-        {
-            "id": "d6e7f8a9-b0c1-2d3e-4f5a-6b7c8d9e0f1a",
-            "name": "TrueHD",
-            "pattern": "true[ .-]?hd",
-            "type": "ContentFilter",
-            "groupId": "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
-            "enabled": true,
-            "style": "filled and bordered",
-            "tagColor": "#000000",
-            "textColor": "#ffffff",
-            "imageUrl": "https://raw.githubusercontent.com/jmxd/Kometa/refs/heads/main/overlays/images/media_info/codec/TrueHD.png"
-        },
-        {
-            "id": "e7f8a9b0-c1d2-3e4f-5a6b-7c8d9e0f1a2b",
-            "name": "TrueHD Atmos",
-            "pattern": "(?=.*\\b(True[ .-]?HD|W4NK3R|HQMUX)\\b)(?=.*\\b(ATMOS|CtrlHD|W4NK3R|DON)\\b)",
-            "type": "ContentFilter",
-            "groupId": "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
-            "enabled": true,
-            "style": "filled and bordered",
-            "tagColor": "#000000",
-            "textColor": "#ffffff",
-            "imageUrl": "https://raw.githubusercontent.com/jmxd/Kometa/refs/heads/main/overlays/images/media_info/codec/TrueHD-Atmos.png"
-        },
-        {
-            "id": "f8a9b0c1-d2e3-4f5a-6b7c-8d9e0f1a2b3c",
-            "name": "DTS-X",
-            "pattern": "dts[-_.: ]?x7?",
-            "type": "ContentFilter",
-            "groupId": "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
-            "enabled": true,
-            "style": "filled and bordered",
-            "tagColor": "#000000",
-            "textColor": "#ffffff",
-            "imageUrl": "https://raw.githubusercontent.com/jorgitoxp/MediaTags/refs/heads/main/overlays/images/media_info/codec/DTS-X.png"
-        },
-        {
-            "id": "a9b0c1d2-e3f4-5a6b-7c8d-9e0f1a2b3c4d",
-            "name": "Dolby Digital+",
-            "pattern": "DD[P+]|e[-_. ]?ac-?3",
-            "type": "ContentFilter",
-            "groupId": "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
-            "enabled": true,
-            "style": "filled and bordered",
-            "tagColor": "#000000",
-            "textColor": "#ffffff",
-            "imageUrl": "https://raw.githubusercontent.com/jmxd/Kometa/refs/heads/main/overlays/images/media_info/codec/DigitalPlus.png"
-        }
-    ]
-}
+  "groups": [
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440000",
+      "name": "Resolution",
+      "color": "#4ECDC4",
+      "isExpanded": true
+    },
+    {
+      "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+      "name": "Dynamic Range",
+      "color": "#FF6B6B",
+      "isExpanded": true
+    },
+    {
+      "id": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
+      "name": "Media Source",
+      "color": "#96CEB4",
+      "isExpanded": true
+    },
+    {
+      "id": "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
+      "name": "Audio",
+      "color": "#45B7D1",
+      "isExpanded": true
+    }
+  ],
+  "filters": [
+    {
+      "id": "9f1a2b3c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+      "name": "4K",
+      "pattern": "2160p|4k|uhd|ultra.?hd|3840\\s?x\\s?\\d{4}",
+      "type": "quality",
+      "isEnabled": true,
+      "tagStyle": "filled",
+      "tagColor": "#000000",
+      "textColor": "#FFFFFF",
+      "imageURL": "https://raw.githubusercontent.com/jmxd/Kometa/main/overlays/images/media_info/resolution/Ultra-HD.png",
+      "groupId": "550e8400-e29b-41d4-a716-446655440000"
+    },
+    {
+      "id": "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+      "name": "1080p",
+      "pattern": "1080p|full.?hd|fhd|hd1080|1920\\s?x\\s?\\d{3,4}",
+      "type": "quality",
+      "isEnabled": true,
+      "tagStyle": "filled",
+      "tagColor": "#000000",
+      "textColor": "#FFFFFF",
+      "groupId": "550e8400-e29b-41d4-a716-446655440000"
+    },
+    {
+      "id": "b2c3d4e5-f6a7-8b9c-0d1e-2f3a4b5c6d7e",
+      "name": "720p",
+      "pattern": "720p|hd720|1280\\s?x\\s?\\d{3,4}",
+      "type": "quality",
+      "isEnabled": true,
+      "tagStyle": "filled",
+      "tagColor": "#000000",
+      "textColor": "#FFFFFF",
+      "imageURL": "https://raw.githubusercontent.com/jmxd/Kometa/main/overlays/images/media_info/resolution/720P.png",
+      "groupId": "550e8400-e29b-41d4-a716-446655440000"
+    },
+    {
+      "id": "c3d4e5f6-a7b8-9c0d-1e2f-3a4b5c6d7e8f",
+      "name": "HDR",
+      "pattern": "hdr(?!10|10\\+|plus)",
+      "type": "quality",
+      "isEnabled": true,
+      "tagStyle": "filled",
+      "tagColor": "#000000",
+      "textColor": "#FFFFFF",
+      "imageURL": "https://raw.githubusercontent.com/jmxd/Kometa/main/overlays/images/media_info/codec/HDR.png",
+      "groupId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8"
+    },
+    {
+      "id": "d4e5f6a7-b8c9-0d1e-2f3a-4b5c6d7e8f9a",
+      "name": "HDR10",
+      "pattern": "hdr10(?!\\+|plus)",
+      "type": "quality",
+      "isEnabled": true,
+      "tagStyle": "filled",
+      "tagColor": "#000000",
+      "textColor": "#FFFFFF",
+      "groupId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8"
+    },
+    {
+      "id": "e5f6a7b8-c9d0-1e2f-3a4b-5c6d7e8f9a0b",
+      "name": "HDR10+",
+      "pattern": "hdr10[ .\\-_]?(plus|\\+)",
+      "type": "quality",
+      "isEnabled": true,
+      "tagStyle": "filled",
+      "tagColor": "#000000",
+      "textColor": "#FFFFFF",
+      "imageURL": "https://raw.githubusercontent.com/jmxd/Kometa/main/overlays/images/media_info/codec/Plus.png",
+      "groupId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8"
+    },
+    {
+      "id": "f6a7b8c9-d0e1-2f3a-4b5c-6d7e8f9a0b1c",
+      "name": "Dolby Vision",
+      "pattern": "dv|dovi|dolby[ .]?v(ision)?",
+      "type": "quality",
+      "isEnabled": true,
+      "tagStyle": "filled",
+      "tagColor": "#000000",
+      "textColor": "#FFFFFF",
+      "imageURL": "https://raw.githubusercontent.com/jmxd/Kometa/main/overlays/images/media_info/codec/DV.png",
+      "groupId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8"
+    },
+    {
+      "id": "a7b8c9d0-e1f2-3a4b-5c6d-7e8f9a0b1c2d",
+      "name": "SDR",
+      "pattern": "sdr",
+      "type": "quality",
+      "isEnabled": true,
+      "tagStyle": "filled",
+      "tagColor": "#000000",
+      "textColor": "#FFFFFF",
+      "groupId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8"
+    },
+    {
+      "id": "c9d0e1f2-a3b4-5c6d-7e8f-9a0b1c2d3e4f",
+      "name": "REMUX",
+      "pattern": "remux",
+      "type": "source",
+      "isEnabled": true,
+      "tagStyle": "filled",
+      "tagColor": "#000000",
+      "textColor": "#FFFFFF",
+      "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e"
+    },
+    {
+      "id": "d0e1f2a3-b4c5-6d7e-8f9a-0b1c2d3e4f5a",
+      "name": "Blu-ray",
+      "pattern": "blu[-_]?ray",
+      "type": "source",
+      "isEnabled": true,
+      "tagStyle": "filled",
+      "tagColor": "#000000",
+      "textColor": "#FFFFFF",
+      "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e"
+    },
+    {
+      "id": "e1f2a3b4-c5d6-7e8f-9a0b-1c2d3e4f5a6b",
+      "name": "WEB",
+      "pattern": "web[-_.]?(dl|rip)",
+      "type": "source",
+      "isEnabled": true,
+      "tagStyle": "filled",
+      "tagColor": "#000000",
+      "textColor": "#FFFFFF",
+      "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e"
+    },
+    {
+      "id": "a3b4c5d6-e7f8-9a0b-1c2d-3e4f5a6b7c8d",
+      "name": "Dolby Atmos",
+      "pattern": "atmos",
+      "type": "audio",
+      "isEnabled": true,
+      "tagStyle": "filled",
+      "tagColor": "#000000",
+      "textColor": "#FFFFFF",
+      "imageURL": "https://raw.githubusercontent.com/jmxd/Kometa/main/overlays/images/media_info/codec/Atmos.png",
+      "groupId": "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f"
+    },
+    {
+      "id": "b4c5d6e7-f8a9-0b1c-2d3e-4f5a6b7c8d9e",
+      "name": "DTS-HD MA",
+      "pattern": "dts[-_. ]?(ma|hd([-_. ]?ma)?|xll)",
+      "type": "audio",
+      "isEnabled": true,
+      "tagStyle": "filled",
+      "tagColor": "#000000",
+      "textColor": "#FFFFFF",
+      "groupId": "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f"
+    },
+    {
+      "id": "d6e7f8a9-b0c1-2d3e-4f5a-6b7c8d9e0f1a",
+      "name": "TrueHD",
+      "pattern": "true[ .-]?hd",
+      "type": "audio",
+      "isEnabled": true,
+      "tagStyle": "filled",
+      "tagColor": "#000000",
+      "textColor": "#FFFFFF",
+      "imageURL": "https://raw.githubusercontent.com/jmxd/Kometa/main/overlays/images/media_info/codec/TrueHD.png",
+      "groupId": "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f"
+    },
+    {
+      "id": "e7f8a9b0-c1d2-3e4f-5a6b-7c8d9e0f1a2b",
+      "name": "TrueHD Atmos",
+      "pattern": "(?=.*\\b(True[ .-]?HD|W4NK3R|HQMUX)\\b)(?=.*\\b(ATMOS|CtrlHD|W4NK3R|DON)\\b)",
+      "type": "audio",
+      "isEnabled": true,
+      "tagStyle": "filled",
+      "tagColor": "#000000",
+      "textColor": "#FFFFFF",
+      "imageURL": "https://raw.githubusercontent.com/jmxd/Kometa/main/overlays/images/media_info/codec/TrueHD-Atmos.png",
+      "groupId": "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f"
+    },
+    {
+      "id": "f8a9b0c1-d2e3-4f5a-6b7c-8d9e0f1a2b3c",
+      "name": "DTS-X",
+      "pattern": "dts[-_.: ]?x7?",
+      "type": "audio",
+      "isEnabled": true,
+      "tagStyle": "filled",
+      "tagColor": "#000000",
+      "textColor": "#FFFFFF",
+      "imageURL": "https://raw.githubusercontent.com/jorgitoxp/MediaTags/main/overlays/images/media_info/codec/DTS-X.png",
+      "groupId": "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f"
+    }
+  ]
+} 
